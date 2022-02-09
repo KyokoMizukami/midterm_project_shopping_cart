@@ -78,6 +78,21 @@ header {
             font-size: 15px;
             color: gray;
         }
+        &-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 10px;
+            padding-right: 10px;
+            button {
+                width: 100px;
+                height: 30px;
+                background-color: gray;
+                color: white;
+                border-style: none;
+                cursor: pointer;
+            }
+        }
     }
 }
 

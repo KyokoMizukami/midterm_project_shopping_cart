@@ -91,6 +91,29 @@ header img {
   color: gray;
 }
 
+.items-each-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.items-each-flex button {
+  width: 100px;
+  height: 30px;
+  background-color: gray;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+}
+
 footer {
   background-color: #f1f0f0;
   margin-top: 40px;
