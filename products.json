@@ -1,0 +1,114 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "STACKED HOODIE",
+        "price": 250.0,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "./img/1SLA-M2818HD-SND_1144x1760_crop_center.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "BANDANA HOODIE",
+        "price": 264.0,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "./img/2SLA-M2819HD-OHG_1144x1760_crop_center.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "ISLAND WAVES HOODIE",
+        "price": 250.0,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "./img/3Web_Greycopy5_c677d289-0865-4a1c-9f08-0cf962793441_1144x1760_crop_center.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "BANDANA HOODIE",
+        "price": 264.0,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "./img/4Web_Greycopy7_c0cb2401-19b1-4441-bb03-7a943344cf5b_1144x1760_crop_center.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "ISLAND WAVES HOODIE",
+        "price": 250.0,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "./img/5Web_Greycopy6_12abf40f-41fd-40d7-adc2-2dbaf68009a1_1144x1760_crop_center.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "SSPORT SMOCK HOODIE",
+        "price": 298.0,
+        "image": {
+          "fields": {
+            "file": { "url": "./img/6M2842HD-PRT_1144x1760_crop_center.jpg" }
+          }
+        }
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "title": "TECHNICAL CROPPED HOODIE",
+        "price": 220.0,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "./img/7Web_Greycopy21_7180b970-4859-4d83-b591-a0c293301f88_1144x1760_crop_center.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "title": "DESERT CAMO THERMAL HOODIE",
+        "price": 235.0,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "./img/8Web_Greycopy7_5c96e9f6-a774-4333-afbc-1e06df6ce8bd_1144x1760_crop_center.jpg"
+            }
+          }
+        }
+      }
+    }
+  ]
+}
