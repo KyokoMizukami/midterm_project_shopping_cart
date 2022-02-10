@@ -5,147 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&display=swap"
       rel="stylesheet"
     />
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/20da313a1d.js" crossorigin="anonymous"></script>
+    <!-- css -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+<!------------------------header-------------- -->
     <header>
       <img src="./img/STAMPD_logo.svg" />
-      <div class="header-wrapper">
-        <div class="header-menu">
-          <ul>
-            <li>shop</li>
-            <li>journal</li>
-            <li>social</li>
-            <li>studio</li>
-          </ul>
+        <div class="header-wrapper">
+            <div class="header-menu">
+                <ul>
+                    <li>shop</li>
+                    <li>journal</li>
+                    <li>social</li>
+                    <li>studio</li>
+                </ul>
+            </div>
+            <div class="cart-btn">
+                <div class="header-icon">
+                    <i class="fas fa-cart-plus"></i>
+                </div>
+                <div class="cart-items">0</div>
+            </div>
         </div>
-        <div class="header-icons">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-search"
-            width="44"
-            height="44"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#000000"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <circle cx="10" cy="10" r="7" />
-            <line x1="21" y1="21" x2="15" y2="15" />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-shopping-cart"
-            width="44"
-            height="44"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#000000"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <circle cx="6" cy="19" r="2" />
-            <circle cx="17" cy="19" r="2" />
-            <path d="M17 17h-11v-14h-2" />
-            <path d="M6 5l14 1l-1 7h-13" />
-          </svg>
-        </div>
-      </div>
     </header>
+<!------------------- end of header  -------------->
 
-    <div class="items">
-        <div class="items-each">
-            <img src="./img/1SLA-M2818HD-SND_1144x1760_crop_center.jpg">
-            <div class="items-each-flex">
-                <div class="items-each-text">
-                    <h2>STACKED HOODIE</h2>
-                    <h3>$250.00</h3>
+<!----------- products ----------->
+    <section class="products">
+        <div class="products-center">
+            <!-- <article class="product">
+                <img src="./img/1SLA-M2818HD-SND_1144x1760_crop_center.jpg" >
+                <div class="product-flex">
+                    <div class="product-text">
+                        <h2>STACKED HOODIE</h2>
+                        <h3>$250.00</h3>
+                    </div>
+                    <button id="add-cart">ADD TO CART</button>
                 </div>
-                <button id="add-cart">ADD TO CART</button>
-            </div>
+            </article> -->
         </div>
-        <div class="items-each">
-            <img src="./img/2SLA-M2819HD-OHG_1144x1760_crop_center.jpg" alt="">
-            <div class="items-each-flex">
-                <div class="items-each-text">
-                    <h2>BANDANA HOODIE</h2>
-                    <h3>$264.00</h3>
+    </section>
+<!------------------ end of products ------------------->
+
+<!------------------- cart -------------->
+<div class="cart-overlay">
+    <div class="cart">
+        <span class="close-cart">
+            <i class="fas fa-window-close"></i>
+        </span>
+        <h2>your cart</h2>
+        <div class="cart-content">
+            <!-- cart item -->
+            <div class="cart-item">
+                <img src="./img/1SLA-M2818HD-SND_1144x1760_crop_center.jpg" alt="">
+                <div>
+                    <h4>STACKED HOODIE</h4>
+                    <h5>$250.00</h5>
+                    <span class="remove-item">remove</span>
                 </div>
-                <button id="add-cart">ADD TO CART</button>
+                <div>
+                    <i class="fas fa-chevron-up"></i>
+                    <p class="item-amount">1</p>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
             </div>
-        </div>
-        <div class="items-each">
-            <img src="./img/3Web_Greycopy5_c677d289-0865-4a1c-9f08-0cf962793441_1144x1760_crop_center.jpg" alt="">
-            <div class="items-each-flex">
-                <div class="items-each-text">
-                    <h2>ISLAND WAVES HOODIE</h2>
-                    <h3>$250.00</h3>
-                </div>
-                <button id="add-cart">ADD TO CART</button>
-            </div>
-        </div>
-        <div class="items-each">
-            <img src="./img/4Web_Greycopy7_c0cb2401-19b1-4441-bb03-7a943344cf5b_1144x1760_crop_center.jpg" alt="">
-            <div class="items-each-flex">
-                <div class="items-each-text">
-                    <h2>BANDANA HOODIE</h2>
-                    <h3>$264.00</h3>
-                </div>
-                <button id="add-cart">ADD TO CART</button>
-            </div>
-        </div>
-        <div class="items-each">
-            <img src="./img/5Web_Greycopy6_12abf40f-41fd-40d7-adc2-2dbaf68009a1_1144x1760_crop_center.jpg" alt="">
-            <div class="items-each-flex">
-                <div class="items-each-text">
-                    <h2>ISLAND WAVES HOODIE</h2>
-                    <h3>$250.00</h3>
-                </div>
-                <button id="add-cart">ADD TO CART</button>
-            </div>
-        </div>
-        <div class="items-each">
-            <img src="./img/6M2842HD-PRT_1144x1760_crop_center.jpg" alt="">
-            <div class="items-each-flex">
-                <div class="items-each-text">
-                    <h2>SSPORT SMOCK HOODIE</h2>
-                    <h3>$298.00</h3>
-                </div>
-                <button id="add-cart">ADD TO CART</button>
-            </div>
-        </div>
-        <div class="items-each">
-            <img src="./img/7Web_Greycopy21_7180b970-4859-4d83-b591-a0c293301f88_1144x1760_crop_center.jpg" alt="">
-            <div class="items-each-flex">
-                <div class="items-each-text">
-                    <h2>TECHNICAL CROPPED HOODIE</h2>
-                    <h3>$220.00</h3>
-                </div>
-                <button id="add-cart">ADD TO CART</button>
-            </div>
-        </div>
-        <div class="items-each">
-            <img src="./img/8Web_Greycopy7_5c96e9f6-a774-4333-afbc-1e06df6ce8bd_1144x1760_crop_center.jpg" alt="">
-            <div class="items-each-flex">
-                <div class="items-each-text">
-                    <h2>DESERT CAMO THERMAL HOODIE</h2>
-                    <h3>$235.00</h3>
-                </div>
-                <button id="add-cart">ADD TO CART</button>
+            <!-- end of cart item -->
+            <div class="cart-footer">
+               <h3>your total : $ <span class="cart-total">0</span></h3> 
+               <button class="clear-cart">clear cart</button>
             </div>
         </div>
     </div>
+</div>
+<!-------------- end of cart -------------->
 
     <footer>
         <div class="footer-list">
@@ -161,5 +103,6 @@
         </div>
         <p>A division of Cornerman Productions, LLC © 2022, All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
