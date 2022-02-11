@@ -48,7 +48,7 @@ class UI {
                 <div class="product-flex">
                     <div class="product-text">
                         <h3>${product.title}</h3>
-                        <h4>${product.price}</h4>
+                        <h4>$${product.price}</h4>
                     </div>
                     <button class="bag-btn "data-id=${product.id}>ADD TO CART</button>
                 </div>
@@ -133,6 +133,42 @@ class UI {
         cartOverlay.classList.remove('transparentBcg')
         cartDOM.classList.remove('showCart')
     }
+    cartLogic(){
+        // clear cart button
+        clearCartBtn.addEventListener("click", () => {
+            this.clearCart();
+          });;
+        //  cart functionality
+        cartContent.addEventListener('click',event=>{
+            if(event.target.classList.contains('remove-item')){
+                let removeItem = event.target;
+                let id = removeItem.dataset.id;
+                // cart item ごと消したい
+                cartContent.removeChild(removeItem.parentElement.parentElement);
+                this.removeItem(id);
+            }
+        });
+    }
+    clearCart() {
+        let cartItems = cart.map(item => item.id);
+        cartItems.forEach(id => this.removeItem(id));
+        // rooping array to check if the cart have item
+        while(cartContent.children.length>0){
+            cartContent.removeChild(cartContent.children[0])
+        }
+        this.hideCart();
+    }
+    removeItem(id){
+        cart = cart.filter(item => item.id !==id);
+        this.setCartValues(cart);
+        Storage.saveCart(cart);
+        let button = this.getSingleButton(id);
+        button.disabled = false;
+        button.innerHTML = `<button id="add-cart">ADD TO CART</button>`;
+    }
+    getSingleButton(id){
+        return buttonsDOM.find(button => button.dataset.id === id);
+    }
 }
 
 // local storage
@@ -166,5 +202,6 @@ document.addEventListener("DOMContentLoaded",()=>{
         Storage.saveProducts(products);
     }).then(()=>{
         ui.getBagButtons();
+        ui.cartLogic();
     });
 });

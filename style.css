@@ -148,7 +148,7 @@ header img {
   background: transparent;
   -webkit-transition: var(--mainTransition);
   transition: var(--mainTransition);
-  background-color: gray;
+  background-color: rgba(68, 68, 68, 0.5);
   z-index: 2;
   visibility: hidden;
 }
