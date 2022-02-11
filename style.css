@@ -238,7 +238,7 @@ header img {
 
 .fa-chevron-up,
 .fa-chevron-down {
-  color: var(--primaryColor);
+  color: gray;
   cursor: pointer;
 }
 
@@ -251,6 +251,19 @@ header img {
 .cart-footer h3 {
   text-transform: capitalize;
   margin-bottom: 1rem;
+}
+
+.clear-cart {
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  font-size: 1rem;
+  background: black;
+  color: white;
+  border: 1px solid black;
+  -webkit-transition: var(--mainTransition);
+  transition: var(--mainTransition);
+  cursor: pointer;
 }
 
 /* --------------- End of Cart ---------------- */
